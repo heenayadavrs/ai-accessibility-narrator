@@ -1,0 +1,6 @@
+page_id,expected_reading_order,observed_types,parse_status,warning,segment_count,pass_manual
+W01,Title -> heading -> paragraph -> heading -> paragraph,heading -> heading -> paragraph -> heading -> paragraph,ok,,5,
+W02,main title -> headings -> paragraphs -> image alt; navigation/footer suppressed,heading -> paragraph -> heading -> paragraph -> image_alt,ok,,5,
+W03,title -> plan headings -> plan details -> CTA links,heading -> heading -> paragraph -> link -> heading -> paragraph -> link,ok,,7,
+W04,title -> question/answer pairs,heading -> heading -> paragraph -> heading -> paragraph,ok,,5,
+W05,error or partial extraction should be exposed; parser must not fabricate missing content,paragraph,partial,Page has limited semantic structure; extraction may be incomplete.,1,

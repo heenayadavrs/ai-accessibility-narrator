@@ -1,0 +1,60 @@
+# Project: AI Accessibility Narrator
+
+## Product truth
+This is an audio-first assistive workflow, not a generic chatbot.
+The primary action is "listen", not "type a prompt".
+
+## Stack
+- Frontend: Next.js App Router + TypeScript
+- Backend: Python + FastAPI
+- Captioning: Salesforce BLIP checkpoint (pin exact checkpoint/license)
+- VQA: BLIP VQA checkpoint / compatible local runtime
+- TTS: Piper with a pinned voice model
+- Web extraction: Playwright + BeautifulSoup
+- OCR stretch: Tesseract
+- Local orchestration: Docker Compose
+
+## Privacy rules
+- No third-party AI API in the MVP.
+- Never upload image bytes to OpenAI, Anthropic, Google, or any other inference service.
+- Do not log raw image data.
+- The URL may be fetched over the network; document this separately from local AI inference.
+
+## UX rules
+- Do not turn the primary UI into chat bubbles.
+- Narration stage is primary.
+- Question box is secondary and tied to the current session.
+- Segment/sentence highlighting is required.
+- Respect prefers-reduced-motion.
+
+## Webpage rules
+- Use structural semantics rather than raw text soup.
+- Exclude scripts, styles, hidden content and repeated chrome.
+- Preserve heading hierarchy.
+- Include meaningful alt text.
+- Expose parser errors rather than guessing.
+
+## Audio rules
+- MVP sync is segment-level.
+- Generate one audio clip per segment.
+- Do not attempt word-level highlighting until segment-level sync is reliable.
+
+## Accessibility rules
+- Semantic HTML first.
+- Keyboard navigation is mandatory.
+- Every control has an accessible name.
+- Never use color as the only state indicator.
+- Test with NVDA before demo.
+
+## AI rules
+- Do not invent visual details that are not supported by the image.
+- Prefer "appears", "may", or "I can't determine" when uncertain.
+- Keep VQA context tied to the active image/session.
+- Keep impairment preview explicitly non-clinical.
+
+## Definition of done
+1. Image -> narration works locally.
+2. Follow-up VQA -> spoken answer works.
+3. Webpage -> ordered segments + read-along works.
+4. Keyboard + screen-reader QA passes core flows.
+5. Network inspection confirms no third-party AI image upload during the local demo.

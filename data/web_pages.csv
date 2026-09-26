@@ -1,0 +1,6 @@
+page_id,fixture_path,scenario,expected_reading_order,quality_flag
+W01,simple_article.html,Simple article,Title -> heading -> paragraph -> heading -> paragraph,clean
+W02,article_with_nav_footer.html,Article with navigation/footer clutter,main title -> headings -> paragraphs -> image alt; navigation/footer suppressed,cluttered
+W03,pricing_page.html,Pricing page,title -> plan headings -> plan details -> CTA links,structured
+W04,faq_page.html,FAQ page,title -> question/answer pairs,structured
+W05,parser_edge_case.html,Incomplete page,error or partial extraction should be exposed; parser must not fabricate missing content,edge_case

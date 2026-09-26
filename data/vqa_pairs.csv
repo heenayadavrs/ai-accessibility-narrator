@@ -1,0 +1,21 @@
+asset_id,pair_no,question,expected_answer,label_type
+I01,1,What color is the shirt?,The shirt appears blue.,seeded_gold
+I03,1,What is the price of Cold Coffee?,Cold Coffee is listed at ₹160.,seeded_gold
+I04,1,What is the product price?,"The listed price is ₹2,999.",seeded_gold
+I05,1,What does the sign say?,The sign says MAPLE STREET.,seeded_gold
+I06,1,What color are the trousers?,The trousers appear beige.,seeded_gold
+I07,1,Which quarter has the highest bar?,Q3 has the highest bar.,seeded_gold
+I08,1,Can you identify the exact objects?,Some details are unclear because the image is low-light; I can describe only what is visible with confidence.,seeded_gold
+I09,1,How many main objects can you identify?,"At least three main objects are visible, though the scene is somewhat cluttered.",seeded_gold
+I10,1,How many distinct main objects are visible?,Three main objects are visible.,seeded_gold
+I11,1,Where is the event?,The event is at Lakeside Park.,seeded_gold
+I12,1,What brand is the product?,I can’t determine the brand from the visible evidence.,seeded_gold
+I13,1,What time does it show?,It shows 10:45.,seeded_gold
+I14,1,What city is shown on the label?,The city shown is Mumbai.,seeded_gold
+I01,2,What is next to the person?,A red car is next to the person.,seeded_gold
+I06,2,What color is the shirt?,The shirt appears blue.,seeded_gold
+I07,2,What does the chart show?,"It shows quarterly sales for Q1, Q2 and Q3.",seeded_gold
+I10,2,How many main objects are on the table?,Three main objects are visible.,seeded_gold
+I11,2,When is the event?,It is on Saturday at 10 AM.,seeded_gold
+I12,2,Is the exact brand visible?,No. The brand cannot be determined from the visible evidence.,seeded_gold
+I14,2,What PIN code is visible?,The label shows PIN 400069.,seeded_gold
