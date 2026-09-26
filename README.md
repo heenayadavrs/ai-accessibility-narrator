@@ -14,13 +14,13 @@ Built with local, open components and pinned model assets. No paid AI API is req
 
 Upload an image, hear a careful caption, ask a follow-up question, and explore educational perspective filters — all on your machine.
 
-![Image mode — source, listen, ask, and perspective](image.png)
+![Image mode — source, listen, ask, and perspective](demo/image.png)
 
 ### Webpage mode
 
 Paste a URL (or use a demo fixture), get ordered semantic segments, and read along with play / pause / next / previous controls.
 
-![Webpage mode — narrate a page with segment read-along](webpage.png)
+![Webpage mode — narrate a page with segment read-along](demo/webpage.png)
 
 ---
 
@@ -182,8 +182,7 @@ frontend/    Next.js narration stage
 data/        Demo images, HTML fixtures, CSVs
 docs/        BRD, PRD, TRD, UX, evaluation, demo script
 scripts/     Model warm-up + evaluation helpers
-image.png    Screenshot — image mode
-webpage.png  Screenshot — webpage mode
+demo/        Screenshots — image mode & webpage mode
 ```
 
 ---
